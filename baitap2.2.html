@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function dienTich(r, pi) {
+                let S = r * r * pi
+                return S
+            }
+        function chuVi(r, pi) {
+                let C = 2 * r * pi
+                return C
+            }
+
+        function bai2() {
+                const pi = 3.14
+                let r = Number(prompt("Nhập bán kính hình tròn "))
+                let chuvi = chuVi(r, pi)
+                let dientich = dienTich(r, pi)
+                document.write("Chu vi hình tròn là " + chuvi + "<br>")
+                document.write("Diện tích hình tròn là " + dientich)
+            }
+        bai2()
+    </script>
+</body>
+</html>

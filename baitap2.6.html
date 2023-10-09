@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function bai6() {
+                let kytu = prompt("Nhập vào ký tự kiểm tra")
+                let check = kiemtraKyTuNguyenAm(kytu)
+                if (check == true) {
+                    alert(kytu + " Đây là ký tự số nguyên dương")
+                } else {
+                    alert(kytu + " Không phải ký tự nguyên dương")
+                }
+
+            }
+        function kiemtraKyTuNguyenAm(kytu) {
+                if (kytu%1==0 && kytu>0) {
+                    return true
+                }
+                return false
+            }
+            bai6()
+    </script>
+</body>
+</html>
