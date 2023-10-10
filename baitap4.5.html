@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sapXep(mang) {
+             min = 0;
+            document.write("Mang = [" + mang + "]<br>")
+
+            for (let i = 0; i < mang.length - 1; i++) {
+                for (let j = i + 1; j < mang.length; j++) {
+                    if (mang[i] < mang[j]) {
+                        min = mang[j]
+                        mang[j] = mang[i]
+                        mang[i] = min
+                    }
+                }
+            }
+            document.write("Sắp xếp từ lớn tới bé Mang = [" + mang + "]<br>")
+        }
+        let mang = [];
+        for (let i = 0; i < 10; i++) {
+                mang[i] = Number(prompt("Nhập số vào mảng"))
+            }
+        sapXep(mang)
+    </script>
+</body>
+</html>

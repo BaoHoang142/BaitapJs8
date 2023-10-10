@@ -8,8 +8,9 @@
 <body>
     <script>
         function bai9() {
-                let mang = ['a', 'b', 'c', 'c', 'd', 'd', 'd', 'e', 'd', 'f']
-                let kytu = prompt("Nhập vào 1 ký tự bất kỳ")
+                let mangChuoi = prompt("Nhập vào chuỗi bất kì") 
+                let mang = mangChuoi.split("")
+                // let kytu = prompt("Nhập vào 1 ký tự bất kỳ")
                 document.write("Mảng gồm [" + mang + "]<br>")
                 let kiemtra = kiemTraTrongMang(kytu, mang)
                 if (kiemtra > 0) {
@@ -19,7 +20,7 @@
                 }
             }
         function kiemTraTrongMang(kytu, mang) {
-                let count = 0
+                let count = 0;
                 for (let i = 0; i < mang.length; i++) {
                 if (kytu == mang[i]) {
                         count++
